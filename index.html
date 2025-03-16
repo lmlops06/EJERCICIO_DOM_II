@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM 2</title>
+   
+    <script>
+        function cambiarBoton(){
+            var textoBoton= document.getElementById("textoBoton");
+            textoBoton.innerHTML = ("Botón Pulsado");
+        }
+        function cambiarTexto(){
+            var titulo=document.getElementById("titulo");
+            titulo.style.width='50px'
+            titulo.style.backgroundColor = 'yellow'
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Título Original</h1>
+    <button onclick="cambiarBoton(), cambiarTexto()" id="textoBoton"></button>
+</body>
+</html>
